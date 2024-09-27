@@ -1,13 +1,12 @@
-import React from 'react'
-import SubHeader from './header/subHeader'
-import MainHeader from './header/mainHeader'
+import React, { Children } from 'react'
 import Header from './header'
 import Footer from './footer'
 
-const Layout = () => {
+const Layout = ({children}) => {
   return (
     <div>
       <Header/>
+      {children}
       <Footer/>
     </div>
   )

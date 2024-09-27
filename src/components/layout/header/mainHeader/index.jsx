@@ -21,7 +21,7 @@ const MainHeader = () => {
         <div className="flex items-center gap-[60px]">
           <div>
             <Link to={"/"}>
-            <h1 className="text-[40px] font-bold ">Snobella</h1>
+              <h1 className="text-[40px] font-bold ">Snobella</h1>
             </Link>
           </div>
           <div className="relative">
