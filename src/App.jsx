@@ -1,20 +1,23 @@
-import "./App.css";
-import Layout from "./components/layout";
-import { Routes, Route } from "react-router-dom";
-import Home from "./pages/home";
 
-function App({children}) {
+import './App.css'
+import DescAndRewMenu from './components/detailPage/descAndRewMenu'
+import CartPage from './pages/cart/cart'
+
+// import HomePage from './pages/home/home'
+import ProductList from './pages/productList/productList'
+import ProductPage from './pages/productPage/productPage'
+
+function App() {
+  
   return (
-    <Layout>
-      {children}
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route />
-        <Route />
-        <Route />
-      </Routes>
-    </Layout>
-  );
+    <>
+     {/* <HomePage/> */}
+   
+    {/* <ProductList/> */}
+     {/* <ProductPage/>  */}
+   <CartPage/>
+    </>
+  )
 }
 
-export default App;
+export default App

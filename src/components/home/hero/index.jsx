@@ -1,31 +1,23 @@
 import React from "react";
-import Hero from "../../../assets/pictures/heroSec.svg"
-
-
-const HeroSection = () => {
+import HeroBags from "../../../assets/images/HeroBags.svg";
+const Hero = () => {
   return (
-    <section className="bg-[#FFE2E0]">
-      <div className="container max-w-[1128px] mx-auto py-[50px] flex justify-between items-center gap-[110px]">
-        <div className="w-[453px]">
-          <p className="text-[#DF4244] text-[24px] font-medium text-left">
-            30% off
-          </p>
-          <h1 className="text-[#212121] text-[40px] font-bold text-left mb-2">
-            Handbag products
-          </h1>
-          <p className="text-[#212121] text-opacity-75 text-[16px] text-left mb-12">
-            It is a long established fact that a reader will be distracted by
-            the readable content expound the actual teachings of the great
-            explorer
-          </p>
-          <button className="bg-[#206363] text-white py-3 px-[56px] rounded-lg text-[16px] font-medium">Shop now</button>
+    <div className="bg-[#FFE2E0] ">
+      <div className="container max-w-[1128px]  flex justify-between items-center mx-auto py-[25px] ">
+        {/* sol */}
+        <div className="w-[450px]">
+          <p className="text-[24px] text-[#DF4244] font-medium">30% off</p>
+          <p className="text-[40px] font-bold text-[#212121]">Handbag products</p>
+          <p className=" text-[16px] font-normal text-[#212121BF] opacity-75 mt-2">It is a long established fact that a reader will be distracted by the readable content expound the actual teachings of the great explorer  </p>
+          <button className="py-3 px-[57px] font-medium text-[16px] text-[#FFFFFF]  border-0 rounded-[8px] shadow-md bg-[#206363] mt-12">Shop now</button>
         </div>
-        <div className="">
-            <img src={Hero}/>
+        {/* sag */}
+        <div>
+          <img src={HeroBags}/>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
-export default HeroSection;
+export default Hero;

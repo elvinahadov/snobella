@@ -1,12 +1,14 @@
 import React from 'react'
+import UpperFooter from './upperFooter'
+import BottomFooter from './bottomFooter'
 import MainFooter from './mainFooter'
-import SubFooter from './subFooter'
 
 const Footer = () => {
   return (
     <div>
-        <MainFooter/>
-        <SubFooter/>
+      <UpperFooter/>
+      <MainFooter/>
+      <BottomFooter/>
     </div>
   )
 }
