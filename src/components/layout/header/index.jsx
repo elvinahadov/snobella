@@ -1,14 +1,14 @@
-import React from 'react'
-import UpperHeader from './upperHeader'
-import BottomHeader from './bottomHeader'
+import React, { Children } from "react";
+import UpperHeader from "./upperHeader";
+import BottomHeader from "./bottomHeader";
 
 const Header = () => {
   return (
     <div>
-        <UpperHeader/>
-        <BottomHeader/>
+      <UpperHeader />
+      <BottomHeader />
     </div>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

@@ -16,11 +16,12 @@ const BottomHeader = () => {
   return (
     <div className=" bg-white">
       <div className="container max-w-[1128px] py-3 gap-[50px] justify-between items-center mx-auto flex flex-col">
-        {/* yuxari */}
         <div className="flex gap-[70px] items-center">
+          <Link to={"/"}>
           <div>
             <p className="text-[40px] font-bold">Snobella</p>
           </div>
+          </Link>
           <div className="relative">
             <input
               placeholder="Search all product"
@@ -30,7 +31,7 @@ const BottomHeader = () => {
               <IoSearch className="w-6 h-6" />
             </div>
           </div>
-          <div className="flex gap-[26px] items-center">
+          <div className="flex justify-between gap-5 items-center">
             <div className="flex items-center gap-[10px]">
               <LuUser2 className="w-6 h-6" />
               <p className="text-[14px] font-medium text-[#2E2E2E]">Sign Up</p>
@@ -39,13 +40,14 @@ const BottomHeader = () => {
               <FaRegHeart className="w-6 h-6" />
               <p className="text-[14px] font-medium text-[#2E2E2E]">Wishlist</p>
             </div>
+            <Link to={"/cart"}>
             <div className="flex items-center gap-[10px]">
               <HiOutlineShoppingBag className="w-6 h-6" />
               <p className="text-[14px] font-medium text-[#2E2E2E]">Basket</p>
             </div>
+            </Link>
           </div>
         </div>
-        {/* asagi */}
         <div className="flex items-center gap-[53px]">
           <ul className="flex items-start gap-[53px] w-[1128px]">
           {
