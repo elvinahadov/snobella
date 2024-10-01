@@ -4,6 +4,7 @@ import useStore from "../../../store/store";
 
 const BagsList = () => {
   const [bags, setBags] = useState([]);
+  const [filteredBags, setFilteredBags] = useState([]);
   const selectedCategoryId = useStore((state) => state.selectedCategoryId);
 
   const fetchData = async () => {
@@ -11,17 +12,18 @@ const BagsList = () => {
     const result = await response.json();
     setBags(result);
   };
+
   useEffect(() => {
     fetchData();
   }, []);
-  console.log("Selected Category ID:", selectedCategoryId);
-  console.log("Bags:", bags);
 
-  let filteredBags = selectedCategoryId
-    ? bags?.filter((bag) => {
-        bag.categoryId === selectedCategoryId;
-      })
-    : bags;
+  useEffect(() =>{
+    if(!selectedCategoryId){
+      setFilteredBags(bags);
+    } else {
+      setFilteredBags(bags.filter(bag => Number(bag.categoryId) === Number(selectedCategoryId)));
+    }
+   },[selectedCategoryId, bags]);
 
   console.log("Filtered Bags:", filteredBags);
   return (
