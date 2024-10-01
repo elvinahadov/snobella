@@ -9,8 +9,15 @@ const Filter = () => {
   const setSelectedCategoryId = useStore(state => state.setSelectedCategoryId);
 
   const [materials,setMaterials]= useState([])
+  const setSelectedMaterialId = useStore(state => state.setSelectedMaterialId);
+
   const [sizes,setSize]= useState([])
+  const setSelectedSizeId = useStore(state => state.setSelectedSizeId);
+
   const [colors,setColors]= useState([])
+  const setSelectedColorId = useStore(state => state.setSelectedColorId);
+  
+
   
   const fetchCategories = async ()=>{
     const response = await fetch("http://localhost:3001/category")
@@ -69,8 +76,7 @@ const Filter = () => {
           <ul className="flex flex-col gap-4">
             {materials.map((bag) => (
               <li key={bag.id} className="flex gap-[14px] items-center">
-                <button className="flex gap-[14px] items-center">
-                  <input type="checkbox" />
+                <button className="flex gap-[14px] items-center" onClick={() => setSelectedMaterialId(bag.id)}>
                   <p>{bag.name}</p>
                 </button>
               </li>
@@ -99,7 +105,7 @@ const Filter = () => {
               />
             </div>
             <button className="px-[15px] py-[10px] bg-[#EF544F] rounded-[8px] text-white">
-              <IoSearch className="w-[20px] h-[20px]" />{" "}
+              <IoSearch className="w-[20px] h-[20px]" />
             </button>
           </div>
         </div>
@@ -113,7 +119,7 @@ const Filter = () => {
           <ul className="flex gap-4">
             {sizes.map((bag) => (
               <li key={bag.id} className="flex gap-[14px] items-center">
-                <button className="py-[7px] px-[23px] rounded-[8px] border border-[#C8C8C8] text-[16px] font-normal">
+                <button className="py-[7px] px-[23px] rounded-[8px] border border-[#C8C8C8] text-[16px] font-normal" onClick={() => setSelectedSizeId(bag.id)}>
                   {bag.name}
                 </button>
               </li>
@@ -128,7 +134,7 @@ const Filter = () => {
         </div>
         <div className="flex flex-wrap gap-[17px]">
           {colors.map((bag) => (
-            <button key={bag.id}>{bag.name}</button>
+            <button key={bag.id} onClick={() => setSelectedColorId(bag.id)}>{bag.name}</button>
           ))}
         </div>
       </div>
