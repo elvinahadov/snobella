@@ -2,9 +2,12 @@ import React from "react";
 import { IoIosArrowUp } from "react-icons/io";
 import { useEffect, useState } from "react";
 import { IoSearch } from "react-icons/io5";
+import useStore from "../../../store/store";
 
 const Filter = () => {
-  const [categories,setCategories]= useState([])
+  const [categories, setCategories] = useState([]);
+  const setSelectedCategoryId = useStore(state => state.setSelectedCategoryId);
+
   const [materials,setMaterials]= useState([])
   const [sizes,setSize]= useState([])
   const [colors,setColors]= useState([])
@@ -46,14 +49,13 @@ const Filter = () => {
         </div>
         <div>
           <ul className="flex flex-col gap-4">
-            {categories &&
-              categories.map((bag) => (
-                <li key={bag.id}>
-                  <button>
-                    <p>{bag.name}</p>
-                  </button>
-                </li>
-              ))}
+          {categories.map((category) => (
+            <li key={category.id}>
+              <button onClick={() => setSelectedCategoryId(category.id)}>
+                <p>{category.name}</p>
+              </button>
+            </li>
+          ))}
           </ul>
         </div>
       </div>

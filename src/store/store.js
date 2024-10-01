@@ -1,21 +1,7 @@
 import { create } from "zustand";
 
-const initialValue = {
-  customCart: [],
-  customFav: [],
-};
-
-const initialState = {
-  ...initialValue,
-  setFields: () => {},
-  setClose: () => {},
-};
-
-export const useStore =
-  create <
-  Store >
-  ((set) => ({
-    ...initialState,
-    setFields: (fields) => set((state) => ({ ...state, ...fields })),
-    setClose: () => set(() => ({ ...initialValue })),
-  }));
+const useStore = create((set) => ({
+  selectedCategoryId: null,
+  setSelectedCategoryId: (id) => set({ selectedCategoryId: id}, console.log(id,"selected category id") ),
+}));
+export default useStore;
