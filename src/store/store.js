@@ -9,5 +9,6 @@ const useStore = create((set) => ({
   setSelectedColorId: (id) => set({ selectedColorId: id}),
   setSelectedSizeId: (id) => set({ selectedSizeId: id}),
   setSelectedMaterialId: (id) => set({ selectedMaterialId: id}),
+  resetFilters: (id)=>set({selectedCategoryId:"", selectedColorId:"", selectedSizeId:"", selectedMaterialId:""})
 }));
 export default useStore;
