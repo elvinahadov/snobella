@@ -1,7 +1,7 @@
 {
   "bags": [
     {
-      "id": 1,
+      "id": "1",
       "categoryId": 1,
       "materialId": 2,
       "sizeId": 1,
@@ -16,10 +16,11 @@
       "description": "A stylish leather shoulder bag, perfect for any occasion.",
       "featured": true,
       "bestseller": false,
+      "discount": false,
       "size": "XS"
     },
     {
-      "id": 2,
+      "id": "2",
       "categoryId": 2,
       "materialId": 6,
       "sizeId": 4,
@@ -34,10 +35,11 @@
       "description": "A versatile canvas tote bag with plenty of space for everyday items.",
       "featured": false,
       "bestseller": true,
+      "discount": true,
       "size": "S"
     },
     {
-      "id": 3,
+      "id": "3",
       "categoryId": 2,
       "materialId": 1,
       "sizeId": 3,
@@ -52,35 +54,37 @@
       "description": "Luxury designer handbag with premium features and stylish design.",
       "featured": false,
       "bestseller": false,
+      "discount": false,
       "size": "XS"
     },
     {
-      "id": 4,
+      "id": "4",
       "categoryId": 3,
       "materialId": 2,
       "sizeId": 2,
       "colorId": 2,
       "name": "Evenings bags",
       "brand": "Brand D",
-      "price": 75.0,
+      "price": 75,
       "color": "000",
       "material": "Faux Fur",
       "inStock": true,
       "image": "https://picsum.photos/id/4/220/240",
       "description": "Compact crossbody bag with adjustable straps and modern design.",
-      "featured": false,
+      "featured": true,
       "bestseller": false,
+      "discount": true,
       "size": "M"
     },
     {
-      "id": 5,
+      "id": "5",
       "categoryId": 4,
       "materialId": 5,
       "sizeId": 4,
       "colorId": 2,
       "name": "Postman bag",
       "brand": "Brand D",
-      "price": 75.0,
+      "price": 75,
       "color": "964B00",
       "material": "Exotic Leathers",
       "inStock": true,
@@ -88,17 +92,18 @@
       "description": "Compact crossbody bag with adjustable straps and modern design.",
       "featured": false,
       "bestseller": false,
+      "discount": true,
       "size": "S"
     },
     {
-      "id": 6,
+      "id": "6",
       "categoryId": 5,
       "materialId": 3,
       "sizeId": 1,
       "colorId": 4,
       "name": "Belt Bags",
       "brand": "Brand D",
-      "price": 75.0,
+      "price": 75,
       "color": "ff0000",
       "material": "Faux Fur",
       "inStock": true,
@@ -106,35 +111,37 @@
       "description": "Compact crossbody bag with adjustable straps and modern design.",
       "featured": false,
       "bestseller": false,
+      "discount": false,
       "size": "M"
     },
     {
-      "id": 7,
+      "id": "7",
       "categoryId": 5,
       "materialId": 2,
       "sizeId": 3,
       "colorId": 3,
       "name": "Belt Bags",
       "brand": "Brand D",
-      "price": 75.0,
+      "price": 75,
       "color": "FFC0CB",
       "material": "Glitter",
       "inStock": true,
       "image": "https://picsum.photos/id/7/220/240",
       "description": "Compact crossbody bag with adjustable straps and modern design.",
       "featured": false,
-      "bestseller": false,
+      "bestseller": true,
+      "discount": true,
       "size": "S"
     },
     {
-      "id": 8,
+      "id": "8",
       "categoryId": 6,
       "materialId": 1,
       "sizeId": 2,
       "colorId": 1,
       "name": "Shoulder Bags",
       "brand": "Brand D",
-      "price": 75.0,
+      "price": 75,
       "color": "964B00",
       "material": "Cotton",
       "inStock": true,
@@ -142,17 +149,18 @@
       "description": "Compact crossbody bag with adjustable straps and modern design.",
       "featured": false,
       "bestseller": false,
+      "discount": true,
       "size": "XS"
     },
     {
-      "id": 9,
+      "id": "9",
       "categoryId": 2,
       "materialId": 4,
       "sizeId": 5,
       "colorId": 5,
       "name": "Tote Bag",
       "brand": "Brand E",
-      "price": 85.0,
+      "price": 85,
       "color": "0000FF",
       "material": "Canvas",
       "inStock": true,
@@ -160,17 +168,18 @@
       "description": "Stylish and spacious tote bag, perfect for work or travel.",
       "featured": true,
       "bestseller": false,
+      "discount": false,
       "size": "L"
     },
     {
-      "id": 10,
+      "id": "10",
       "categoryId": 1,
       "materialId": 2,
       "sizeId": 4,
       "colorId": 3,
       "name": "Weekend Bag",
       "brand": "Brand F",
-      "price": 150.0,
+      "price": 150,
       "color": "C0C0C0",
       "material": "Leather",
       "inStock": true,
@@ -178,17 +187,18 @@
       "description": "Durable weekend bag with ample space for your essentials.",
       "featured": false,
       "bestseller": true,
+      "discount": true,
       "size": "M"
     },
     {
-      "id": 11,
+      "id": "11",
       "categoryId": 3,
       "materialId": 4,
       "sizeId": 2,
       "colorId": 1,
       "name": "Crossbody Bag",
       "brand": "Brand G",
-      "price": 60.0,
+      "price": 60,
       "color": "FFD700",
       "material": "Synthetic",
       "inStock": true,
@@ -196,17 +206,18 @@
       "description": "Stylish crossbody bag with a golden finish.",
       "featured": true,
       "bestseller": false,
+      "discount": false,
       "size": "M"
     },
     {
-      "id": 12,
+      "id": "12",
       "categoryId": 4,
       "materialId": 5,
       "sizeId": 3,
       "colorId": 2,
       "name": "Gym Bag",
       "brand": "Brand H",
-      "price": 90.0,
+      "price": 90,
       "color": "00FF00",
       "material": "Nylon",
       "inStock": true,
@@ -214,17 +225,18 @@
       "description": "Spacious gym bag with compartments for shoes and water bottles.",
       "featured": false,
       "bestseller": true,
+      "discount": true,
       "size": "L"
     },
     {
-      "id": 13,
+      "id": "13",
       "categoryId": 1,
       "materialId": 3,
       "sizeId": 4,
       "colorId": 3,
       "name": "Diaper Bag",
       "brand": "Brand I",
-      "price": 120.0,
+      "price": 120,
       "color": "FFC0CB",
       "material": "Cotton",
       "inStock": true,
@@ -232,17 +244,18 @@
       "description": "Functional diaper bag with multiple pockets for organization.",
       "featured": true,
       "bestseller": false,
+      "discount": false,
       "size": "L"
     },
     {
-      "id": 14,
+      "id": "14",
       "categoryId": 3,
       "materialId": 1,
       "sizeId": 2,
       "colorId": 2,
       "name": "Clutch Bag",
       "brand": "Brand J",
-      "price": 70.0,
+      "price": 70,
       "color": "800080",
       "material": "Leather",
       "inStock": true,
@@ -250,17 +263,18 @@
       "description": "Elegant clutch bag, perfect for formal events.",
       "featured": false,
       "bestseller": true,
+      "discount": true,
       "size": "S"
     },
     {
-      "id": 15,
+      "id": "15",
       "categoryId": 1,
       "materialId": 4,
       "sizeId": 5,
       "colorId": 5,
       "name": "Travel Bag",
       "brand": "Brand K",
-      "price": 175.0,
+      "price": 175,
       "color": "A52A2A",
       "material": "Leather",
       "inStock": true,
@@ -268,17 +282,18 @@
       "description": "Spacious travel bag with durable leather construction.",
       "featured": true,
       "bestseller": true,
+      "discount": false,
       "size": "L"
     },
     {
-      "id": 16,
+      "id": "16",
       "categoryId": 3,
       "materialId": 2,
       "sizeId": 1,
       "colorId": 2,
       "name": "Sling Bag",
       "brand": "Brand L",
-      "price": 55.0,
+      "price": 55,
       "color": "8B4513",
       "material": "Canvas",
       "inStock": true,
@@ -286,17 +301,18 @@
       "description": "Casual sling bag with adjustable strap.",
       "featured": false,
       "bestseller": false,
+      "discount": true,
       "size": "S"
     },
     {
-      "id": 17,
+      "id": "17",
       "categoryId": 2,
       "materialId": 1,
       "sizeId": 3,
       "colorId": 4,
       "name": "Foldable Backpack",
       "brand": "Brand M",
-      "price": 40.0,
+      "price": 40,
       "color": "FF4500",
       "material": "Nylon",
       "inStock": true,
@@ -304,66 +320,138 @@
       "description": "Lightweight and foldable backpack, perfect for travel.",
       "featured": false,
       "bestseller": true,
+      "discount": false,
       "size": "M"
     }
   ],
-
   "category": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Shoulder Bags",
       "image": "./src/assets/images/ShoulderBag.png",
       "description": "A stylish leather shoulder bag, perfect for any occasion."
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Hand bag",
       "image": "./src/assets/images/HandBag.png",
       "description": "A versatile canvas tote bag with plenty of space for everyday items."
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Backpack",
       "image": "./src/assets/images/Bagpack.png",
       "description": "Luxury designer handbag with premium features and stylish design."
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Evenings bags",
       "image": "./src/assets/images/EveningBags.png",
       "description": "Compact crossbody bag with adjustable straps and modern design."
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Postman bag",
       "image": "./src/assets/images/EveningBags.png",
       "description": "Compact crossbody bag with adjustable straps and modern design."
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "Belt Bags",
       "image": "./src/assets/images/EveningBags.png",
       "description": "Compact crossbody bag with adjustable straps and modern design."
     }
   ],
   "colors": [
-    { "id": 1, "name": "red", "code": "#ff0000" },
-    { "id": 2, "name": "black", "code": "#000" },
-    { "id": 3, "name": "beige", "code": "#f5f5dc" },
-    { "id": 4, "name": "brown", "code": "#964B00" },
-    { "id": 5, "name": "pink", "code": "#FFC0CB" }
+    {
+      "id": "1",
+      "name": "red",
+      "code": "#ff0000"
+    },
+    {
+      "id": "2",
+      "name": "black",
+      "code": "#000"
+    },
+    {
+      "id": "3",
+      "name": "beige",
+      "code": "#f5f5dc"
+    },
+    {
+      "id": "4",
+      "name": "brown",
+      "code": "#964B00"
+    },
+    {
+      "id": "5",
+      "name": "pink",
+      "code": "#FFC0CB"
+    }
   ],
   "sizes": [
-    { "id": 1, "name": "XS" },
-    { "id": 2, "name": "S" },
-    { "id": 3, "name": "M" }
+    {
+      "id": "1",
+      "name": "XS"
+    },
+    {
+      "id": "2",
+      "name": "S"
+    },
+    {
+      "id": "3",
+      "name": "M"
+    }
   ],
   "materials": [
-    { "id": 1, "name": "Cloth" },
-    { "id": 2, "name": "Cotton" },
-    { "id": 3, "name": "Denim-Jeans" },
-    { "id": 4, "name": "Faux Fur" },
-    { "id": 5, "name": "Exotic Leathers" },
-    { "id": 6, "name": "Glitter" }
+    {
+      "id": "1",
+      "name": "Cloth"
+    },
+    {
+      "id": "2",
+      "name": "Cotton"
+    },
+    {
+      "id": "3",
+      "name": "Denim-Jeans"
+    },
+    {
+      "id": "4",
+      "name": "Faux Fur"
+    },
+    {
+      "id": "5",
+      "name": "Exotic Leathers"
+    },
+    {
+      "id": "6",
+      "name": "Glitter"
+    }
+  ],
+  "users": [
+    {
+      "id": "7b7d",
+      "username": "elvinnn",
+      "email": "elvin@gmail.com",
+      "password": "1234",
+      "basket": [
+        {
+          "productId": "1",
+          "count": 1
+        },
+        {
+          "productId": "2",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "78d0",
+      "username": "ali",
+      "email": "ali@gmail.com",
+      "password": "123",
+      "basket": []
+    }
   ]
 }

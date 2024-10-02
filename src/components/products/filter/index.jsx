@@ -1,82 +1,92 @@
 import React from "react";
-import { IoIosArrowUp } from "react-icons/io";
+import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { useEffect, useState } from "react";
 import { IoSearch } from "react-icons/io5";
 import useStore from "../../../store/store";
 
 const Filter = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggleArrows=()=>{
+    setIsOpen(!isOpen)
+  }
+
   const [categories, setCategories] = useState([]);
-  const setSelectedCategoryId = useStore(state => state.setSelectedCategoryId);
+  const setSelectedCategoryId = useStore(
+    (state) => state.setSelectedCategoryId
+  );
 
-  const [materials,setMaterials]= useState([])
-  const setSelectedMaterialId = useStore(state => state.setSelectedMaterialId);
+  const [materials, setMaterials] = useState([]);
+  const setSelectedMaterialId = useStore(
+    (state) => state.setSelectedMaterialId
+  );
 
-  const [sizes,setSize]= useState([])
-  const setSelectedSizeId = useStore(state => state.setSelectedSizeId);
+  const [sizes, setSize] = useState([]);
+  const setSelectedSizeId = useStore((state) => state.setSelectedSizeId);
 
-  const [colors,setColors]= useState([])
-  const setSelectedColorId = useStore(state => state.setSelectedColorId);
-  
+  const [colors, setColors] = useState([]);
+  const setSelectedColorId = useStore((state) => state.setSelectedColorId);
 
-  
-  const fetchCategories = async ()=>{
-    const response = await fetch("http://localhost:3001/category")
-    const data = await response.json()
+  const fetchCategories = async () => {
+    const response = await fetch("http://localhost:3001/category");
+    const data = await response.json();
     setCategories(data);
-  }
-  const fetchMaterials = async ()=>{
-    const response = await fetch("http://localhost:3001/materials")
-    const data = await response.json()
+  };
+  const fetchMaterials = async () => {
+    const response = await fetch("http://localhost:3001/materials");
+    const data = await response.json();
     setMaterials(data);
-  }
-  const fetchSizes = async ()=>{
-    const response = await fetch("http://localhost:3001/sizes")
-    const data = await response.json()
+  };
+  const fetchSizes = async () => {
+    const response = await fetch("http://localhost:3001/sizes");
+    const data = await response.json();
     setSize(data);
-  }
-  const fetchColors = async ()=>{
-    const response = await fetch("http://localhost:3001/colors")
-    const data = await response.json()
+  };
+  const fetchColors = async () => {
+    const response = await fetch("http://localhost:3001/colors");
+    const data = await response.json();
     setColors(data);
-  }
+  };
 
-
-  useEffect(()=>{
-    fetchCategories()
-    fetchMaterials()
-    fetchSizes()
-    fetchColors()
-  },[])
+  useEffect(() => {
+    fetchCategories();
+    fetchMaterials();
+    fetchSizes();
+    fetchColors();
+  }, []);
   return (
     <div className="w-[326px] flex flex-col gap-6">
-      <div className="w-full rounded-[8px] py-4 px-10 border border-[#D0D0D0] flex flex-col gap-6">
+      <div className="w-full rounded-[8px] py-4 px-10 border border-[#D0D0D0] flex flex-col">
         <div className="flex justify-between items-center">
           <p className="text-[20px] font-medium text-[#212121]">Categories</p>
-          <IoIosArrowUp />
+          {isOpen === true ? <IoIosArrowUp className="cursor-pointer" onClick={toggleArrows}/> : <IoIosArrowDown className="cursor-pointer" onClick={toggleArrows}/>}
         </div>
         <div>
-          <ul className="flex flex-col gap-4">
-          {categories.map((category) => (
-            <li key={category.id}>
-              <button onClick={() => setSelectedCategoryId(category.id)}>
-                <p>{category.name}</p>
-              </button>
-            </li>
-          ))}
-          </ul>
+          {isOpen === true ?
+          <ul className="flex flex-col">
+            {categories.map((category) => (
+              <li key={category.id} className="py-4">
+                <button onClick={() => setSelectedCategoryId(category.id)}>
+                  <p>{category.name}</p>
+                </button>
+              </li>
+            ))}
+          </ul>:""}
         </div>
       </div>
 
       <div className="w-full rounded-[8px] py-4 px-10 border border-[#D0D0D0] flex flex-col gap-6">
         <div className="flex justify-between items-center">
           <p className="text-[20px] font-medium text-[#212121]">Materials</p>
-          <IoIosArrowUp />
+          <IoIosArrowUp/>
         </div>
         <div>
           <ul className="flex flex-col gap-4">
             {materials.map((bag) => (
               <li key={bag.id} className="flex gap-[14px] items-center">
-                <button className="flex gap-[14px] items-center" onClick={() => setSelectedMaterialId(bag.id)}>
+                <button
+                  className="flex gap-[14px] items-center"
+                  onClick={() => setSelectedMaterialId(bag.id)}
+                >
                   <p>{bag.name}</p>
                 </button>
               </li>
@@ -119,7 +129,10 @@ const Filter = () => {
           <ul className="flex gap-4">
             {sizes.map((bag) => (
               <li key={bag.id} className="flex gap-[14px] items-center">
-                <button className="py-[7px] px-[23px] rounded-[8px] border border-[#C8C8C8] text-[16px] font-normal" onClick={() => setSelectedSizeId(bag.id)}>
+                <button
+                  className="py-[7px] px-[23px] rounded-[8px] border border-[#C8C8C8] text-[16px] font-normal"
+                  onClick={() => setSelectedSizeId(bag.id)}
+                >
                   {bag.name}
                 </button>
               </li>
@@ -134,7 +147,9 @@ const Filter = () => {
         </div>
         <div className="flex flex-wrap gap-[17px]">
           {colors.map((bag) => (
-            <button key={bag.id} onClick={() => setSelectedColorId(bag.id)}>{bag.name}</button>
+            <button key={bag.id} onClick={() => setSelectedColorId(bag.id)}>
+              {bag.name}
+            </button>
           ))}
         </div>
       </div>

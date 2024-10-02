@@ -4,13 +4,6 @@ import useStore from '../../../store/store';
 
 const Heading = () => {
   const {resetFilters}=useStore();
-  // const resetFilters=()=>{
-  //   setSelectedCategoryId("");
-  //   setSelectedMaterialId("");
-  //   setSelectedSizeId("");
-  //   setSelectedColorId("");
-  //   console.log("filteredBags");
-  // }
 
   return (
     <div className='w-[1128px] flex items-center justify-between'>
@@ -22,7 +15,7 @@ const Heading = () => {
                 <MdKeyboardArrowDown />
             </div>
             <div>
-        <button className="py-2 px-4 rounded-lg border-[1px] border-[#D0D0D0]" onClick={resetFilters}>Reset Filters</button>
+        <button className="py-2 px-4 rounded-lg border-[1px] bg-red-600 text-white border-[#D0D0D0]" onClick={resetFilters}>Reset Filters</button>
       </div>
         </div>
 
