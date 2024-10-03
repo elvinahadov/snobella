@@ -32,7 +32,6 @@ const CartProducts = () => {
         body: JSON.stringify({ basket: [] }),
       });
       
-      // Clear the cart in the state
       setCart([]);
     }
   };
@@ -48,7 +47,7 @@ const CartProducts = () => {
         <h1 className="text-[40px] text-[#212121] font-bold">Shopping bag</h1>
         <button
           className="py-2 px-4 rounded-lg border-[1px] bg-red-600 text-white border-[#D0D0D0]"
-          onClick={clearCart} // Add onClick handler here
+          onClick={clearCart}
         >
           Clear cart
         </button>
@@ -66,7 +65,9 @@ const CartProducts = () => {
                   image={product.image}
                   name={product.name}
                   id={product.id}
+                  size={product.size}
                   price={product.price}
+                  color={product.color}
                   count={item.count}
                 />
               ) : null;

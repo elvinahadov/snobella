@@ -9,6 +9,7 @@ import SignIn from "./pages/signIn";
 import SignUp from "./pages/signUp";
 import { useEffect } from "react";
 import useStore from "./store/store";
+import Wishlist from "./pages/wishlist";
 
 function App() {
   const {setLogin,setLogout}=useStore();
@@ -27,10 +28,11 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/cart" element={<CartPage />} />
-          <Route path="/product/detail" element={<ProductPage />} />
+          <Route path="/product/:id" element={<ProductPage />} />
           <Route path="/product/list" element={<ProductList />} />
           <Route path="/signIn" element={<SignIn />} />
           <Route path="/signUp" element={<SignUp />} />
+          <Route path="/wishlist" element={<Wishlist />} />
         </Routes>
       </Layout>
     </>

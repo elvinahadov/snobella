@@ -4,12 +4,10 @@ import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
 const BestSellerAndFeatured = ({ title, property }) => {
   const [bags, setBags] = useState([]);
-
   const fetchData = async () => {
     const response = await fetch("http://localhost:3001/bags");
     const result = await response.json();
     
-    // Filter bags based on the property
     const filteredData = result.filter(item => item[property] === true);
     setBags(filteredData);
   };

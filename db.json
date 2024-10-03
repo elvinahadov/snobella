@@ -9,7 +9,7 @@
       "name": "Shoulder Bags",
       "brand": "Brand A",
       "price": 120.99,
-      "color": "000",
+      "color": "Black",
       "material": "Cloth",
       "inStock": true,
       "image": "https://picsum.photos/id/1/220/240",
@@ -17,7 +17,8 @@
       "featured": true,
       "bestseller": false,
       "discount": false,
-      "size": "XS"
+      "size": "XS",
+      "isNew": false
     },
     {
       "id": "2",
@@ -28,7 +29,7 @@
       "name": "Hand bag",
       "brand": "Brand B",
       "price": 45.5,
-      "color": "f5f5dc",
+      "color": "White",
       "material": "Cotton",
       "inStock": true,
       "image": "https://picsum.photos/id/2/220/240",
@@ -36,7 +37,9 @@
       "featured": false,
       "bestseller": true,
       "discount": true,
-      "size": "S"
+      "size": "S",
+      "isNew": true,
+      "discountPercentage": 25
     },
     {
       "id": "3",
@@ -47,7 +50,7 @@
       "name": "Backpack",
       "brand": "Brand C",
       "price": 299.99,
-      "color": "ff0000",
+      "color": "Pink",
       "material": "Denim-Jeans",
       "inStock": false,
       "image": "https://picsum.photos/id/3/220/240",
@@ -55,7 +58,8 @@
       "featured": false,
       "bestseller": false,
       "discount": false,
-      "size": "XS"
+      "size": "XS",
+      "isNew": false
     },
     {
       "id": "4",
@@ -66,7 +70,7 @@
       "name": "Evenings bags",
       "brand": "Brand D",
       "price": 75,
-      "color": "000",
+      "color": "Beige",
       "material": "Faux Fur",
       "inStock": true,
       "image": "https://picsum.photos/id/4/220/240",
@@ -74,7 +78,9 @@
       "featured": true,
       "bestseller": false,
       "discount": true,
-      "size": "M"
+      "size": "M",
+      "isNew": true,
+      "discountPercentage": 15
     },
     {
       "id": "5",
@@ -85,7 +91,7 @@
       "name": "Postman bag",
       "brand": "Brand D",
       "price": 75,
-      "color": "964B00",
+      "color": "Brown",
       "material": "Exotic Leathers",
       "inStock": true,
       "image": "https://picsum.photos/id/5/220/240",
@@ -93,7 +99,9 @@
       "featured": false,
       "bestseller": false,
       "discount": true,
-      "size": "S"
+      "size": "S",
+      "isNew": false,
+      "discountPercentage": 30
     },
     {
       "id": "6",
@@ -104,7 +112,7 @@
       "name": "Belt Bags",
       "brand": "Brand D",
       "price": 75,
-      "color": "ff0000",
+      "color": "Black",
       "material": "Faux Fur",
       "inStock": true,
       "image": "https://picsum.photos/id/6/220/240",
@@ -112,7 +120,8 @@
       "featured": false,
       "bestseller": false,
       "discount": false,
-      "size": "M"
+      "size": "M",
+      "isNew": false
     },
     {
       "id": "7",
@@ -123,7 +132,7 @@
       "name": "Belt Bags",
       "brand": "Brand D",
       "price": 75,
-      "color": "FFC0CB",
+      "color": "Pink",
       "material": "Glitter",
       "inStock": true,
       "image": "https://picsum.photos/id/7/220/240",
@@ -131,7 +140,9 @@
       "featured": false,
       "bestseller": true,
       "discount": true,
-      "size": "S"
+      "size": "S",
+      "isNew": true,
+      "discountPercentage": 40
     },
     {
       "id": "8",
@@ -142,7 +153,7 @@
       "name": "Shoulder Bags",
       "brand": "Brand D",
       "price": 75,
-      "color": "964B00",
+      "color": "Brown",
       "material": "Cotton",
       "inStock": true,
       "image": "https://picsum.photos/id/8/220/240",
@@ -150,7 +161,9 @@
       "featured": false,
       "bestseller": false,
       "discount": true,
-      "size": "XS"
+      "size": "XS",
+      "isNew": false,
+      "discountPercentage": 10
     },
     {
       "id": "9",
@@ -161,7 +174,7 @@
       "name": "Tote Bag",
       "brand": "Brand E",
       "price": 85,
-      "color": "0000FF",
+      "color": "Blue",
       "material": "Canvas",
       "inStock": true,
       "image": "https://picsum.photos/id/9/220/240",
@@ -169,7 +182,8 @@
       "featured": true,
       "bestseller": false,
       "discount": false,
-      "size": "L"
+      "size": "L",
+      "isNew": true
     },
     {
       "id": "10",
@@ -180,7 +194,7 @@
       "name": "Weekend Bag",
       "brand": "Brand F",
       "price": 150,
-      "color": "C0C0C0",
+      "color": "Silver",
       "material": "Leather",
       "inStock": true,
       "image": "https://picsum.photos/id/10/220/240",
@@ -188,7 +202,9 @@
       "featured": false,
       "bestseller": true,
       "discount": true,
-      "size": "M"
+      "size": "M",
+      "isNew": false,
+      "discountPercentage": 20
     },
     {
       "id": "11",
@@ -199,7 +215,7 @@
       "name": "Crossbody Bag",
       "brand": "Brand G",
       "price": 60,
-      "color": "FFD700",
+      "color": "Gold",
       "material": "Synthetic",
       "inStock": true,
       "image": "https://picsum.photos/id/11/220/240",
@@ -207,7 +223,8 @@
       "featured": true,
       "bestseller": false,
       "discount": false,
-      "size": "M"
+      "size": "M",
+      "isNew": true
     },
     {
       "id": "12",
@@ -218,7 +235,7 @@
       "name": "Gym Bag",
       "brand": "Brand H",
       "price": 90,
-      "color": "00FF00",
+      "color": "Green",
       "material": "Nylon",
       "inStock": true,
       "image": "https://picsum.photos/id/12/220/240",
@@ -226,7 +243,9 @@
       "featured": false,
       "bestseller": true,
       "discount": true,
-      "size": "L"
+      "size": "L",
+      "isNew": true,
+      "discountPercentage": 35
     },
     {
       "id": "13",
@@ -237,7 +256,7 @@
       "name": "Diaper Bag",
       "brand": "Brand I",
       "price": 120,
-      "color": "FFC0CB",
+      "color": "Pink",
       "material": "Cotton",
       "inStock": true,
       "image": "https://picsum.photos/id/13/220/240",
@@ -245,7 +264,8 @@
       "featured": true,
       "bestseller": false,
       "discount": false,
-      "size": "L"
+      "size": "L",
+      "isNew": false
     },
     {
       "id": "14",
@@ -256,7 +276,7 @@
       "name": "Clutch Bag",
       "brand": "Brand J",
       "price": 70,
-      "color": "800080",
+      "color": "Purple",
       "material": "Leather",
       "inStock": true,
       "image": "https://picsum.photos/id/14/220/240",
@@ -264,7 +284,9 @@
       "featured": false,
       "bestseller": true,
       "discount": true,
-      "size": "S"
+      "size": "S",
+      "isNew": false,
+      "discountPercentage": 5
     },
     {
       "id": "15",
@@ -275,7 +297,7 @@
       "name": "Travel Bag",
       "brand": "Brand K",
       "price": 175,
-      "color": "A52A2A",
+      "color": "Brown",
       "material": "Leather",
       "inStock": true,
       "image": "https://picsum.photos/id/15/220/240",
@@ -283,7 +305,8 @@
       "featured": true,
       "bestseller": true,
       "discount": false,
-      "size": "L"
+      "size": "L",
+      "isNew": false
     },
     {
       "id": "16",
@@ -294,7 +317,7 @@
       "name": "Sling Bag",
       "brand": "Brand L",
       "price": 55,
-      "color": "8B4513",
+      "color": "Brown",
       "material": "Canvas",
       "inStock": true,
       "image": "https://picsum.photos/id/16/220/240",
@@ -302,7 +325,9 @@
       "featured": false,
       "bestseller": false,
       "discount": true,
-      "size": "S"
+      "size": "S",
+      "isNew": true,
+      "discountPercentage": 12
     },
     {
       "id": "17",
@@ -313,7 +338,7 @@
       "name": "Foldable Backpack",
       "brand": "Brand M",
       "price": 40,
-      "color": "FF4500",
+      "color": "Orange",
       "material": "Nylon",
       "inStock": true,
       "image": "https://picsum.photos/id/17/220/240",
@@ -321,7 +346,8 @@
       "featured": false,
       "bestseller": true,
       "discount": false,
-      "size": "M"
+      "size": "M",
+      "isNew": true
     }
   ],
   "category": [
@@ -431,27 +457,17 @@
   ],
   "users": [
     {
-      "id": "7b7d",
-      "username": "elvinnn",
+      "id": "443f",
+      "username": "elvinahadov",
       "email": "elvin@gmail.com",
       "password": "1234",
-      "basket": [
+      "basket": [],
+      "wishList": [
         {
-          "productId": "1",
-          "count": 1
-        },
-        {
-          "productId": "2",
-          "count": 1
+          "productId": ""
         }
-      ]
-    },
-    {
-      "id": "78d0",
-      "username": "ali",
-      "email": "ali@gmail.com",
-      "password": "123",
-      "basket": []
+      ],
+      "wishlist": []
     }
   ]
 }

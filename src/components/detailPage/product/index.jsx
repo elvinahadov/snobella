@@ -1,9 +1,8 @@
 import React from "react";
 import { IoIosArrowUp } from "react-icons/io";
-import BigBagpack from "./../../../assets/images/BigBagpack.png";
 import { IoIosArrowDown } from "react-icons/io";
 import { IoMdHeartEmpty } from "react-icons/io";
-const Product = () => {
+const Product = ({image}) => {
   return (
     <div className="flex gap-[64px]">
       {/* sol */}
@@ -11,16 +10,16 @@ const Product = () => {
         <div className="flex flex-col items-center gap-4">
           <IoIosArrowUp />
           <div className="w-[72px] h-[94px] rounded-[8px] border border-[#206363] flex justify-center items-center">
-            <img src={BigBagpack} />
+            <img src={image} />
           </div>
           <div className="w-[72px] h-[94px] rounded-[8px] border border-[#E4E4E4] flex justify-center items-center">
-            <img src={BigBagpack} />
+            <img src={image} />
           </div>
           <div className="w-[72px] h-[94px] rounded-[8px] border border-[#E4E4E4] flex justify-center items-center">
-            <img src={BigBagpack} />
+            <img src={image} />
           </div>
           <div className="w-[72px] h-[94px] rounded-[8px] border border-[#E4E4E4] flex justify-center items-center">
-            <img src={BigBagpack} />
+            <img src={image} />
           </div>
           <IoIosArrowDown />
         </div>
@@ -28,7 +27,7 @@ const Product = () => {
           <div className="py-[3px] px-[22px] text-white text-[16px] font-medium bg-[#DF4244] rounded-[8px] absolute top-6 left-6">
             30 %
           </div>
-          <img src={BigBagpack} className="w-[340px] h-[379px]" />
+          <img src={image} className="w-[340px] h-[379px]" />
           <div className="text-[#DF4244] absolute top-6 right-6">
             <IoMdHeartEmpty className="w-7 h-7" />
           </div>
@@ -36,7 +35,7 @@ const Product = () => {
       </div>
       {/* sag */}
       <div>
-        <p className="text-[24px] font-medium text-[#212121]"> Hotel Magique Love and Magique Tote Bag</p>
+        <p className="text-[24px] font-medium text-[#212121]">{name}</p>
         <div className="flex items-center gap-[10px] mt-2"> 
           <div className="flex items-center">
             {[...Array(5)].map((_, index) => (

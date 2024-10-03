@@ -6,7 +6,7 @@ import { HiOutlineShoppingBag } from "react-icons/hi2";
 import { Link } from "react-router-dom";
 import useStore from "../../../../store/store";
 const BottomHeader = () => {
-  const { isLogin,setLogout } = useStore();
+  const { isLogin, setLogout } = useStore();
   const navElements = [
     { title: "Evening bags", href: "/eveningBags" },
     { title: "Shoulder bag", href: "/shoulderBag" },
@@ -15,11 +15,11 @@ const BottomHeader = () => {
     { title: "Postman bag", href: "/postmanBag" },
     { title: "Belt bags", href: "/beltBags" },
   ];
-  const logoutHandler=()=>{
+  const logoutHandler = () => {
     setLogout(false);
-    localStorage.setItem("isLogin","false");
-    localStorage.setItem("userEmail","");
-  }
+    localStorage.setItem("isLogin", "false");
+    localStorage.setItem("userEmail", "");
+  };
   return (
     <div className=" bg-white">
       <div className="container max-w-[1128px] py-3 gap-[50px] justify-between items-center mx-auto flex flex-col">
@@ -58,10 +58,14 @@ const BottomHeader = () => {
                 </div>
               </Link>
             )}
-            <div className="flex items-center gap-[10px]">
-              <FaRegHeart className="w-6 h-6" />
-              <p className="text-[14px] font-medium text-[#2E2E2E]">Wishlist</p>
-            </div>
+            <Link to={"/wishlist"}>
+              <div className="flex items-center gap-[10px]">
+                <FaRegHeart className="w-6 h-6" />
+                <p className="text-[14px] font-medium text-[#2E2E2E]">
+                  Wishlist
+                </p>
+              </div>
+            </Link>
             <Link to={"/cart"}>
               <div className="flex items-center gap-[10px]">
                 <HiOutlineShoppingBag className="w-6 h-6" />

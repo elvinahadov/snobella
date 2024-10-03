@@ -3,7 +3,7 @@ import React from "react";
 const SingleCartProduct = ({name,image,size,color,price,count}) => {
   return (
     <div className="container max-w-[744px] border-[#E4E4E4] rounded-lg border-[1px] p-4 flex gap-6">
-      <div className="p-4 bg-[#F9F9F9] rounded-lg w-[150px] h-[180px]">
+      <div className="p-4 bg-[#F9F9F9] rounded-lg w-[150px] h-[180px] flex justify-center">
         <img src={image} alt="" className="rounded-lg"/>
       </div>
       <div className="flex flex-col">
