@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import useStore from "../../../../store/store";
 const BottomHeader = () => {
   const { isLogin, setLogout } = useStore();
+  const isLoggedIn = localStorage.getItem('isLogin');
   const navElements = [
     { title: "Evening bags", href: "/eveningBags" },
     { title: "Shoulder bag", href: "/shoulderBag" },
@@ -39,7 +40,7 @@ const BottomHeader = () => {
             </div>
           </div>
           <div className="flex justify-between gap-5 items-center">
-            {isLogin === true ? (
+            {isLoggedIn === true ? (
               <Link to={"/signIn"} onClick={logoutHandler}>
                 <div className="flex items-center gap-[10px]">
                   <LuUser2 className="w-6 h-6" />

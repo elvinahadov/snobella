@@ -26,6 +26,7 @@ const SignIn = () => {
         navigate("/")
       } else {
         alert("Invalid email or password");
+        localStorage.setItem("isLogin", "false");
       }
     } catch (error) {
       alert("Error fetching users");
